@@ -2,6 +2,7 @@
 
 import Image, { type ImageProps } from "next/image";
 import { motion } from "framer-motion";
+import { useEffect, useRef } from "react";
 import { Skeleton } from "@/components/ui/Skeleton";
 import { useImageLoaded } from "@/hooks/useImageLoaded";
 
@@ -15,6 +16,14 @@ export function ImageWithSkeleton({
   ...imageProps
 }: ImageWithSkeletonProps) {
   const { isLoaded, handleLoad } = useImageLoaded();
+  const imgRef = useRef<HTMLImageElement>(null);
+
+  useEffect(() => {
+    if (imgRef.current?.complete) {
+      handleLoad();
+    }
+  }, []);
+
   return (
     <div className="relative">
       {!isLoaded && (
@@ -25,8 +34,7 @@ export function ImageWithSkeleton({
         animate={{ opacity: isLoaded ? 1 : 0 }}
         transition={{ duration: 0.3 }}
       >
-        {" "}
-        <Image {...imageProps} alt={alt} onLoad={handleLoad} />
+        <Image ref={imgRef} {...imageProps} alt={alt} onLoad={handleLoad} />
       </motion.div>
     </div>
   );
