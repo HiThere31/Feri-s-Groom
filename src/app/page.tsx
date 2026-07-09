@@ -11,6 +11,7 @@ import { Testimonials } from "@/components/landing/Testimonials";
 import { ClientComments } from "@/components/landing/ClientComments";
 import { MobileTestimonials } from "@/components/landing/mobile/MobileTestimonials";
 import { Contact } from "@/components/landing/Contact";
+import { Footer } from "@/components/landing/Footer";
 
 export default function HomePage() {
   return (
@@ -31,6 +32,7 @@ export default function HomePage() {
       <Testimonials className="hidden md:block" />
       <ClientComments className="hidden md:block" />
       <Contact />
+      <Footer />
 
       <MobileBottomCta className="md:hidden" />
     </>

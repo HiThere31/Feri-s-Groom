@@ -5,15 +5,6 @@
     padding: 3rem 0 4.5rem;
   }
 
-  /* Espacio extra abajo en mobile para que MobileBottomCta (fixed) no
-     tape el final del contenido — Contact ahora es la última sección
-     antes de esa barra. */
-  @media (max-width: 767px) {
-    .contact {
-      padding-bottom: 7rem;
-    }
-  }
-
   .contact__grid {
     max-width: 1180px;
     margin: 0 auto;
