@@ -33,8 +33,6 @@ export default function HomePage() {
       <ClientComments className="hidden md:block" />
       <Contact />
       <Footer />
-
-      <MobileBottomCta className="md:hidden" />
     </>
   );
 }
