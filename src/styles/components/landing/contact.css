@@ -1,0 +1,93 @@
+@layer components {
+  .contact {
+    background: #fff;
+    border-top: 1px solid var(--color-rosa-tint);
+    padding: 3rem 0 4.5rem;
+  }
+
+  /* Espacio extra abajo en mobile para que MobileBottomCta (fixed) no
+     tape el final del contenido — Contact ahora es la última sección
+     antes de esa barra. */
+  @media (max-width: 767px) {
+    .contact {
+      padding-bottom: 7rem;
+    }
+  }
+
+  .contact__grid {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  @media (min-width: 768px) {
+    .contact__grid {
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 4rem;
+      align-items: center;
+    }
+  }
+
+  .contact__heading {
+    font-family: var(--font-display);
+    font-size: clamp(1.7rem, 2.6vw, 2.5rem);
+    font-weight: 600;
+    line-height: 1.1;
+    color: var(--color-tinta);
+  }
+
+  .contact__lead {
+    font-family: var(--font-body);
+    font-size: 1.06rem;
+    line-height: 1.62;
+    color: var(--color-tinta-60);
+    max-width: 46ch;
+    margin-top: 1rem;
+  }
+
+  .contact__cta {
+    margin-top: 1.75rem;
+    box-shadow: 0 12px 28px rgba(244, 114, 168, 0.4);
+  }
+
+  .contact__methods {
+    display: flex;
+    flex-direction: column;
+    gap: 0.875rem;
+  }
+
+  .contact__method {
+    display: flex;
+    align-items: center;
+    gap: 0.875rem;
+    background: var(--color-crema);
+    border-radius: 16px;
+    padding: 1rem 1.25rem;
+  }
+
+  .contact__method-icon {
+    width: 42px;
+    height: 42px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    background: var(--color-rosa-tint);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+  }
+
+  .contact__method-label {
+    font-size: 0.76rem;
+    font-weight: 600;
+    color: var(--color-tinta-60);
+  }
+
+  .contact__method-value {
+    font-weight: 700;
+    color: var(--color-tinta);
+  }
+}

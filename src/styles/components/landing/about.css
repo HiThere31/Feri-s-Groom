@@ -1,0 +1,98 @@
+@layer components {
+  .about {
+    background: #fff;
+    border-top: 1px solid var(--color-rosa-tint);
+    border-bottom: 1px solid var(--color-rosa-tint);
+    padding: 4.5rem 1.5rem;
+  }
+
+  .about__grid {
+    max-width: 1180px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 0.82fr 1.18fr;
+    gap: 4rem;
+    align-items: center;
+  }
+
+  .about__visual {
+    position: relative;
+  }
+
+  .about__blob {
+    position: absolute;
+    inset: auto -4% -6% -6%;
+    z-index: 0;
+    width: 62%;
+    height: 62%;
+    background: var(--color-rosa-tint);
+    border-radius: 58% 42% 47% 53% / 52% 56% 44% 48%;
+  }
+
+  .about__portrait {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 30px;
+    box-shadow: 0 20px 48px rgba(43, 26, 34, 0.14);
+  }
+
+  .about__heading {
+    font-family: var(--font-display);
+    font-size: clamp(1.8rem, 2.6vw, 2.5rem);
+    font-weight: 600;
+    line-height: 1.1;
+    color: var(--color-tinta);
+  }
+
+  .about__lead {
+    font-family: var(--font-body);
+    font-size: 1.06rem;
+    line-height: 1.62;
+    color: var(--color-tinta-60);
+    max-width: 52ch;
+    margin-top: 1.125rem;
+  }
+
+  .about__stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.125rem;
+    margin-top: 1.875rem;
+  }
+
+  .about__stat-value {
+    display: block;
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: var(--color-rosa-fuerte);
+  }
+
+  .about__stat-label {
+    display: block;
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: var(--color-tinta-60);
+    margin-top: 0.125rem;
+  }
+
+  .about__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.625rem;
+    margin-top: 1.75rem;
+  }
+
+  .about__tag {
+    background: var(--color-rosa-tint);
+    color: var(--color-rosa-fuerte);
+    font-weight: 700;
+    font-size: 0.84rem;
+    padding: 0.5625rem 0.9375rem;
+    border-radius: 999px;
+  }
+}

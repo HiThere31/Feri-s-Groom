@@ -1,0 +1,21 @@
+:root {
+  --color-rosa: #f472a8;
+  --color-rosa-fuerte: #c2447a;
+  --color-rosa-tint: #fdeaf2;
+  --color-rosa-soft: #f7cadd;
+  --color-crema: #fff8f3;
+  --color-tinta: #2b1a22;
+  --color-tinta-60: #6b5660;
+  --color-menta: #bfe8d4;
+  --color-line: #ecdfd8;
+
+  --font-display: var(--font-fredoka), system-ui, sans-serif;
+  --font-body: var(--font-nunito-sans), system-ui, sans-serif;
+
+  --radius-card: 20px;
+  --radius-button: 999px;
+
+  --motion-fast: 200ms;
+  --motion-medium: 350ms;
+  --motion-ease: cubic-bezier(0.22, 1, 0.36, 1);
+}

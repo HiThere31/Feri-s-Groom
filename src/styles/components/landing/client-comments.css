@@ -1,0 +1,65 @@
+@layer components {
+  .client-comments {
+    padding: 4.5rem 0;
+  }
+
+  .client-comments__wrap {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+
+  .client-comments__intro {
+    max-width: 50ch;
+  }
+
+  .client-comments__heading {
+    font-family: var(--font-display);
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: var(--color-tinta);
+  }
+
+  .client-comments__lead {
+    font-family: var(--font-body);
+    font-size: 1.06rem;
+    line-height: 1.62;
+    color: var(--color-tinta-60);
+    margin-top: 0.75rem;
+  }
+
+  .client-comments__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.875rem;
+    margin-top: 1.875rem;
+  }
+
+  .client-comments__card {
+    margin: 0;
+    background: #fff;
+    border-radius: 18px;
+    padding: 1.375rem;
+    box-shadow: 0 6px 18px rgba(43, 26, 34, 0.06);
+  }
+
+  .client-comments__stars {
+    color: var(--color-rosa);
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+  }
+
+  .client-comments__text {
+    margin-top: 0.625rem;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: var(--color-tinta);
+  }
+
+  .client-comments__author {
+    margin-top: 0.875rem;
+    font-weight: 700;
+    font-size: 0.85rem;
+    color: var(--color-tinta);
+  }
+}

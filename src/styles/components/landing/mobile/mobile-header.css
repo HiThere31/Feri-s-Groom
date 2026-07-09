@@ -1,0 +1,21 @@
+@layer components {
+  .mobile-header {
+    background: var(--color-crema);
+    color: var(--color-tinta);
+    border-bottom: 1px solid var(--color-rosa-tint);
+    transition: background var(--motion-fast) var(--motion-ease),
+      color var(--motion-fast) var(--motion-ease);
+  }
+
+  .mobile-header--rosa {
+    background: var(--color-rosa);
+    color: #fff;
+    border-bottom-color: transparent;
+  }
+
+  .mobile-header__brand {
+    font-family: var(--font-display);
+    font-size: 1.125rem;
+    font-weight: 600;
+  }
+}

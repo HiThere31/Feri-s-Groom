@@ -1,0 +1,117 @@
+@layer components {
+  .gallery-lightbox {
+    position: fixed;
+    inset: 0;
+    z-index: 50;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(17, 17, 17, 0.92);
+  }
+
+  .gallery-lightbox__stage {
+    position: relative;
+    max-width: 90vw;
+    max-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .gallery-lightbox__frame {
+    position: relative;
+    display: inline-flex;
+    max-width: min(90vw, 900px);
+    max-height: 80vh;
+    border-radius: var(--radius-card);
+    overflow: hidden;
+  }
+
+  .gallery-lightbox__skeleton-wrap {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+  }
+
+  .gallery-lightbox__skeleton {
+    width: 100%;
+    height: 100%;
+    border-radius: var(--radius-card);
+  }
+
+  .gallery-lightbox__image {
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: min(90vw, 900px);
+    max-height: 80vh;
+    object-fit: contain;
+    border-radius: var(--radius-card);
+    touch-action: pan-y;
+    user-select: none;
+  }
+
+  .gallery-lightbox__close {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    z-index: 51;
+    color: #fff;
+    font-size: 1.5rem;
+    line-height: 1;
+  }
+
+  .gallery-lightbox__nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 51;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.12);
+    color: #fff;
+    font-size: 2rem;
+  }
+
+  .gallery-lightbox__nav--prev {
+    left: 1.5rem;
+  }
+
+  .gallery-lightbox__nav--next {
+    right: 1.5rem;
+  }
+
+  .gallery-lightbox__hint {
+    position: absolute;
+    bottom: 1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.14);
+    color: #fff;
+    font-size: 0.875rem;
+    white-space: nowrap;
+  }
+
+  .gallery-lightbox__hint-icon {
+    display: inline-block;
+    animation: swipe-hint-shift 1.4s ease-in-out infinite;
+  }
+
+  @keyframes swipe-hint-shift {
+    0%,
+    100% {
+      transform: translateX(-4px);
+    }
+    50% {
+      transform: translateX(4px);
+    }
+  }
+}

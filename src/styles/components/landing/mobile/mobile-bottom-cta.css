@@ -1,0 +1,10 @@
+@layer components {
+  .mobile-bottom-cta {
+    background: linear-gradient(to bottom, transparent, var(--color-crema) 42%);
+  }
+
+  .mobile-bottom-cta .button--primary {
+    min-height: 52px;
+    box-shadow: 0 10px 24px rgba(244, 114, 168, 0.4);
+  }
+}

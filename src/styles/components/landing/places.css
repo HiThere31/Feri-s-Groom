@@ -1,0 +1,47 @@
+@layer components {
+  .places {
+    background: #fff;
+    border-top: 1px solid var(--color-rosa-tint);
+    border-bottom: 1px solid var(--color-rosa-tint);
+    padding: 4.5rem 0;
+  }
+
+  .places__wrap {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+
+  .places__label {
+    text-align: center;
+    font-weight: 700;
+    font-size: 0.82rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--color-tinta-60);
+  }
+
+  .places__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.875rem 1.75rem;
+    margin-top: 1.625rem;
+  }
+
+  .places__place {
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: var(--color-tinta);
+    opacity: 0.78;
+    white-space: nowrap;
+  }
+
+  .places__place-icon {
+    color: var(--color-rosa);
+  }
+}

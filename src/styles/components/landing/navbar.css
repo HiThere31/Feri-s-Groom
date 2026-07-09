@@ -1,0 +1,31 @@
+@layer components {
+  .navbar {
+    background: var(--color-crema);
+    border-bottom: 1px solid var(--color-rosa-tint);
+  }
+
+  .navbar__wrap {
+    width: 100%;
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 1rem 1.5rem;
+  }
+
+  .navbar__brand {
+    font-family: var(--font-display);
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--color-rosa-fuerte);
+  }
+
+  .navbar__link {
+    font-family: var(--font-body);
+    font-weight: 600;
+    color: var(--color-tinta);
+    transition: color var(--motion-fast) var(--motion-ease);
+  }
+
+  .navbar__link:hover {
+    color: var(--color-rosa-fuerte);
+  }
+}
