@@ -87,7 +87,7 @@
 
   .hero__blob {
     position: absolute;
-    inset: -7% -5% -5% -7%;
+    inset: -6%;
     z-index: 0;
     background: var(--color-rosa);
     border-radius: 46% 54% 60% 40% / 44% 42% 58% 56%;
@@ -102,7 +102,7 @@
     aspect-ratio: 1 / 1;
     object-fit: cover;
     border-radius: 50%;
-    border: 11px solid var(--color-crema);
+    border: 18px solid var(--color-crema);
     box-shadow: 0 24px 60px rgba(43, 26, 34, 0.18);
   }
 

@@ -57,6 +57,14 @@
     background: var(--color-crema);
     border-radius: 16px;
     padding: 1rem 1.25rem;
+    text-decoration: none;
+    transition: background var(--motion-fast) var(--motion-ease),
+      transform var(--motion-fast) var(--motion-ease);
+  }
+
+  .contact__method:hover {
+    background: var(--color-rosa-tint);
+    transform: translateY(-2px);
   }
 
   .contact__method-icon {

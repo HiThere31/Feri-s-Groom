@@ -12,16 +12,36 @@ interface ContactMethod {
   icon: string;
   label: string;
   value: string;
+  href: string;
 }
 
-const WHATSAPP_NUMBER = "000 000 0000";
-const INSTAGRAM_HANDLE = "@feris.groom";
-const EMAIL_ADDRESS = "hola@ferisgroom.com";
+const WHATSAPP_DISPLAY = "+506 6070 6087";
+const WHATSAPP_NUMBER = "50660706087";
+const INSTAGRAM_HANDLE = "feris.groom";
+const EMAIL_ADDRESS = "luisavela04@gmail.com";
 
 const CONTACT_METHODS: ContactMethod[] = [
-  { id: "whatsapp", icon: "📱", label: "WhatsApp", value: WHATSAPP_NUMBER },
-  { id: "instagram", icon: "📷", label: "Instagram", value: INSTAGRAM_HANDLE },
-  { id: "email", icon: "✉️", label: "Email", value: EMAIL_ADDRESS },
+  {
+    id: "whatsapp",
+    icon: "📱",
+    label: "WhatsApp",
+    value: WHATSAPP_DISPLAY,
+    href: `https://wa.me/${WHATSAPP_NUMBER}`,
+  },
+  {
+    id: "instagram",
+    icon: "📷",
+    label: "Instagram",
+    value: INSTAGRAM_HANDLE,
+    href: `htpps://instagram.com/${INSTAGRAM_HANDLE}`,
+  },
+  {
+    id: "email",
+    icon: "✉️",
+    label: "Email",
+    value: EMAIL_ADDRESS,
+    href: `mailto:${EMAIL_ADDRESS}`,
+  },
 ];
 
 export function Contact({ className }: ContactProps) {
@@ -46,7 +66,13 @@ export function Contact({ className }: ContactProps) {
 
         <Reveal delay={0.1} className="contact__methods">
           {CONTACT_METHODS.map((method) => (
-            <div key={method.id} className="contact__method">
+            <a
+              href={method.href}
+              key={method.id}
+              target={method.id === "email" ? undefined : "_blank"}
+              rel={method.id === "email" ? undefined : "noopener noreferrer"}
+              className="contact__method"
+            >
               <span className="contact__method-icon" aria-hidden="true">
                 {method.icon}
               </span>
@@ -54,7 +80,7 @@ export function Contact({ className }: ContactProps) {
                 <div className="contact__method-label">{method.label}</div>
                 <div className="contact__method-value">{method.value}</div>
               </div>
-            </div>
+            </a>
           ))}
         </Reveal>
       </div>

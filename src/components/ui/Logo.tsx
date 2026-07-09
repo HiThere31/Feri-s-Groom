@@ -16,7 +16,7 @@ interface LogoProps {
   width?: number;
 }
 
-const LOGO_SRC = "/brand/feris-groom-logo.png";
+const LOGO_SRC = "brand/FERIS-GROOM-LOGO.png";
 // Dimensiones reales del archivo fuente: 4500 x 5625px
 const LOGO_ASPECT_RATIO = 4500 / 5625;
 

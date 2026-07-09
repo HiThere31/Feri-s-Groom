@@ -14,8 +14,20 @@
   }
 
   .mobile-header__brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4375rem;
     font-family: var(--font-display);
     font-size: 1.125rem;
     font-weight: 600;
+  }
+
+  .mobile-header__brand-icon {
+    display: block;
+    flex-shrink: 0;
+  }
+
+  .mobile-header__brand-icon--mask {
+    background-color: #fff;
   }
 }

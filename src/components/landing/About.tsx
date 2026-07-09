@@ -6,8 +6,7 @@ interface AboutProps {
   className?: string;
 }
 
-const ABOUT_PORTRAIT_SRC =
-  "https://picsum.photos/seed/feris-about-groomer-working/800/820";
+const ABOUT_PORTRAIT_SRC = "/img/about/About-picture.jpeg";
 
 const STATS = [
   { value: "5+", label: "años de experiencia" },
@@ -32,8 +31,8 @@ export function About({ className }: AboutProps) {
           <Image
             src={ABOUT_PORTRAIT_SRC}
             alt="Fernanda en su estación de grooming"
-            width={800}
-            height={820}
+            width={900}
+            height={998}
             className="about__portrait"
           />
         </div>

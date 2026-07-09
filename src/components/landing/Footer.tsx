@@ -7,11 +7,14 @@ export function Footer() {
   return (
     <footer className="footer">
       <div className="footer__wrap">
-        <Logo variant="white" width={72} className="footer__logo" />
+        <Logo variant="white" width={200} className="footer__logo" />
 
         <div className="footer__info">
           <p className="footer__tagline">
-            Fernanda Ríos · Groomer profesional · Hecho con cariño 🐾
+            Fernanda Arias · Groomer profesional · Hecho con cariño 🐾
+          </p>
+          <p className="footer__tagline">
+            Groomer certifica parte de la asociación canofila costarricense{" "}
           </p>
           <p className="footer__legal">
             © {SITE_YEAR} Feri&apos;s Groom®. Todos los derechos reservados.

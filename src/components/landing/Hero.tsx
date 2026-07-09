@@ -7,8 +7,7 @@ interface HeroProps {
   className?: string;
 }
 
-const HERO_PORTRAIT_SRC =
-  "https://picsum.photos/seed/feris-groomer-portrait-dog/820/900";
+const HERO_PORTRAIT_SRC = "/img/hero/FERIS-GROOM-LOGO.jpg";
 
 export function Hero({ className }: HeroProps) {
   return (
@@ -42,7 +41,7 @@ export function Hero({ className }: HeroProps) {
             <div className="hero__blob" aria-hidden="true" />
             <Image
               src={HERO_PORTRAIT_SRC}
-              alt="Feri trabajando con una mascota"
+              alt="Feri's groom logo"
               width={820}
               height={900}
               priority

@@ -7,8 +7,7 @@ interface MobileIntroProps {
   className?: string;
 }
 
-const PORTRAIT_SRC =
-  "https://picsum.photos/seed/feris-about-groomer-working/780/640";
+const PORTRAIT_SRC = "/img/about/About-picture.jpg";
 
 const WORK_PLACES = [
   { icon: "●", name: "Clínica Veterinaria Dr.Andres Fallas Gómez. " },
@@ -23,6 +22,7 @@ const SPECIALTIES = [
   "Grooming felino",
   "Pelo largo",
   "Primeros auxilios",
+  "Tenicas de stripping",
 ];
 
 const STATS = [
