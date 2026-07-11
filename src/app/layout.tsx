@@ -1,6 +1,6 @@
-import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import { Fredoka, Nunito_Sans } from "next/font/google";
+import { buildMetadata } from "@/lib/metadata";
 import "@/styles/globals.css";
 
 const fredoka = Fredoka({
@@ -14,11 +14,7 @@ const nunitoSans = Nunito_Sans({
   variable: "--font-nunito-sans",
 });
 
-export const metadata: Metadata = {
-  title: "Feri's Groom — Grooming profesional para tu mascota",
-  description:
-    "Baño, corte y spa para perros y gatos. Mirá nuestros trabajos y agendá tu cita.",
-};
+export const metadata = buildMetadata();
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (

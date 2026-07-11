@@ -6,7 +6,7 @@ interface AboutProps {
   className?: string;
 }
 
-const ABOUT_PORTRAIT_SRC = "/img/about/About-picture.jpeg";
+const ABOUT_PORTRAIT_SRC = "/img/about/About-picture.jpg";
 
 const STATS = [
   { value: "5+", label: "años de experiencia" },
