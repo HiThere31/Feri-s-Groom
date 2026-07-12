@@ -40,11 +40,13 @@ export function About({ className }: AboutProps) {
         <div className="about__content">
           <h2 className="about__heading">Hola soy Fernanda Arias</h2>
           <p className="about__lead">
-            Groomer profesional especializada en perros y gatos. Trabajo con
-            paciencia, técnica y mucho respeto por el ritmo de cada animal,
-            sobre todo los más nerviosos o de primera vez. Mi objetivo no es
-            solo que se vean lindos, sino que el baño sea una experiencia
-            tranquila.
+            Soy enfermera veterinaria,y groomer profesional con formación y
+            certificaciones nacionales e internacionales en estética canina y
+            felina. Me especializo en técnicas como stripping, mantos largos,
+            corte a tijera y peluquería comercial y creativo ,siempre
+            priorizando el bienestar, la seguridad y la comodidad de cada
+            mascota. Mi compromiso es brindar un servicio de calidad, con
+            profesionalismo, dedicación y mucho amor por los animales.
           </p>
 
           <div className="about__stats">
