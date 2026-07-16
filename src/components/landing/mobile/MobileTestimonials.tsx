@@ -19,7 +19,7 @@ const EMPLOYER_REFERENCES: EmployerReference[] = [
   {
     id: "mariana",
     quote:
-      "Transformó por completo nuestra área de estética. Los clientes empezaron a pedir cita con ella por su nombre.",
+      "El trabajo de Luisa en Firulais fue excelente. Durante su tiempo con nosotros, no solo le brindó un trato amable y cálido a nuestros clientes, sino que también se esmeraba en que el resultado final del grooming fuera de la más alta calidad. Incluso aconsejaba a los dueños basándose en las necesidades específicas de su mascota! Muy profesional y recomendada.",
     name: "Mariana Estrada",
     role: "Dueña · Huellitas Spa & Pet",
     avatarSrc: "https://picsum.photos/seed/feris-ref-mariana/120/120",

@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/Button";
 import { Reveal } from "@/components/ui/Reveal";
+import { BUSINESS_INFO } from "@/lib/business-info";
 import { SECTION_IDS } from "@/lib/sections";
 import "@/styles/components/landing/contact.css";
 
@@ -15,32 +16,27 @@ interface ContactMethod {
   href: string;
 }
 
-const WHATSAPP_DISPLAY = "+506 6070 6087";
-const WHATSAPP_NUMBER = "50660706087";
-const INSTAGRAM_HANDLE = "feris.groom";
-const EMAIL_ADDRESS = "luisavela04@gmail.com";
-
 const CONTACT_METHODS: ContactMethod[] = [
   {
     id: "whatsapp",
     icon: "📱",
     label: "WhatsApp",
-    value: WHATSAPP_DISPLAY,
-    href: `https://wa.me/${WHATSAPP_NUMBER}`,
+    value: BUSINESS_INFO.whatsappDisplay,
+    href: `https://wa.me/${BUSINESS_INFO.whatsappDigits}`,
   },
   {
     id: "instagram",
     icon: "📷",
     label: "Instagram",
-    value: INSTAGRAM_HANDLE,
-    href: `htpps://instagram.com/${INSTAGRAM_HANDLE}`,
+    value: `@${BUSINESS_INFO.instagramHandle}`,
+    href: `https://instagram.com/${BUSINESS_INFO.instagramHandle}`,
   },
   {
     id: "email",
     icon: "✉️",
     label: "Email",
-    value: EMAIL_ADDRESS,
-    href: `mailto:${EMAIL_ADDRESS}`,
+    value: BUSINESS_INFO.email,
+    href: `mailto:${BUSINESS_INFO.email}`,
   },
 ];
 
@@ -57,8 +53,8 @@ export function Contact({ className }: ContactProps) {
             escribime y coordinamos. Respondo rápido y con gusto.
           </p>
           <Button
-            href={`mailto:${EMAIL_ADDRESS}`}
-            className="contact__cta  w-full md:w-auto"
+            href={`mailto:${BUSINESS_INFO.email}`}
+            className="contact__cta w-full md:w-auto"
           >
             Hablemos
           </Button>
@@ -67,8 +63,8 @@ export function Contact({ className }: ContactProps) {
         <Reveal delay={0.1} className="contact__methods">
           {CONTACT_METHODS.map((method) => (
             <a
-              href={method.href}
               key={method.id}
+              href={method.href}
               target={method.id === "email" ? undefined : "_blank"}
               rel={method.id === "email" ? undefined : "noopener noreferrer"}
               className="contact__method"

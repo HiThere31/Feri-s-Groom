@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
 import { Fredoka, Nunito_Sans } from "next/font/google";
+import { JsonLd } from "@/components/JsonLd";
 import { buildMetadata } from "@/lib/metadata";
 import "@/styles/globals.css";
 
@@ -19,7 +20,10 @@ export const metadata = buildMetadata();
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="es" className={`${fredoka.variable} ${nunitoSans.variable}`}>
-      <body>{children}</body>
+      <body>
+        <JsonLd />
+        {children}
+      </body>
     </html>
   );
 }
