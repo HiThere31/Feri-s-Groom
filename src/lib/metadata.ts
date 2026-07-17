@@ -26,6 +26,10 @@ export function buildMetadata({
       canonical,
     },
 
+    verification: {
+      google: "3yL0EJhEXok1i1g5UxJSM0F11lvelh9E1S5YuXJw4Wk",
+    },
+
     openGraph: {
       title,
       description,
